@@ -1,0 +1,47 @@
+version: "3.9"
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  contacts-database:
+    image: mysql
+    container_name: contacts-database
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=contacts
+      - MYSQL_USER=contacts
+      - MYSQL_PASSWORD=contacts
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+
+  contacts-redis:
+    image: redis:alpine
+    volumes:
+      - redis:/data
+    ports:
+      - 6379:6379
+    networks:
+      - backend
+
+  contacts-backend:
+    container_name: contacts-backend
+    build: ./
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 9432:80
+    networks:
+      - backend
+    depends_on:
+      - contacts-database
+      - contacts-redis
+
+volumes:
+  dbdata:
+  redis:
