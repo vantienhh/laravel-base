@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Subscribers;
+namespace App\Contracts\Subscriber;
 
-use App\Repositories\BaseRepositoryInterface;
+use App\Contracts\Base\BaseRepositoryInterface;
 
 interface SubscriberRepositoryInterface extends BaseRepositoryInterface
 {

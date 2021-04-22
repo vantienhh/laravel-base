@@ -7,7 +7,7 @@ use League\Fractal\TransformerAbstract;
 
 class ContactTransformer extends TransformerAbstract
 {
-    protected $availableIncludes = [
+    protected array $availableIncludes = [
     ];
 
     public function transform(Contact $contact = null): array

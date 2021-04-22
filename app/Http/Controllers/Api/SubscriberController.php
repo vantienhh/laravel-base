@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Transformers\SubscriberTransformer;
-use App\Repositories\Subscribers\SubscriberRepositoryInterface;
+use App\Contracts\Subscriber\SubscriberRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 

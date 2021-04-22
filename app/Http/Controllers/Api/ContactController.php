@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Transformers\ContactTransformer;
 use App\Http\Transformers\SubscriberTransformer;
-use App\Repositories\Contacts\ContactRepositoryInterface;
-use App\Repositories\Subscribers\SubscriberRepositoryInterface;
+use App\Contracts\Contact\ContactRepositoryInterface;
+use App\Contracts\Subscriber\SubscriberRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Arr;

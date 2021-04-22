@@ -7,7 +7,7 @@ use League\Fractal\TransformerAbstract;
 
 class SubscriberTransformer extends TransformerAbstract
 {
-    protected $availableIncludes = [
+    protected array $availableIncludes = [
     ];
 
     public function transform(Subscriber $subscriber = null): array

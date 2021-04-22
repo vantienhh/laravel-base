@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Contacts;
+namespace App\Contracts\Contact;
 
-use App\Repositories\BaseRepositoryInterface;
+use App\Contracts\Base\BaseRepositoryInterface;
 
 interface ContactRepositoryInterface extends BaseRepositoryInterface
 {
