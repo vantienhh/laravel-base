@@ -4,6 +4,7 @@ namespace App\Repositories\Contacts;
 
 use App\Models\Contacts\Contact;
 use App\Repositories\BaseRepository;
+use App\Contracts\Contact\ContactRepositoryInterface;
 
 class ContactRepository extends BaseRepository implements ContactRepositoryInterface
 {

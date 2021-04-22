@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Arr;
 use ReflectionClass;
 use \Carbon\Carbon;
+use App\Contracts\Base\BaseRepositoryInterface;
 
 
 abstract class BaseRepository implements BaseRepositoryInterface

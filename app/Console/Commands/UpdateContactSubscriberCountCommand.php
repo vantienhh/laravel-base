@@ -3,7 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Contacts\Contact;
-use App\Repositories\Contacts\ContactRepositoryInterface;
+use App\Contracts\Contact\ContactRepositoryInterface;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Redis;
 

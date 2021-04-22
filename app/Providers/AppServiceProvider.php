@@ -3,9 +3,9 @@
 namespace App\Providers;
 
 use App\Repositories\Contacts\ContactRepository;
-use App\Repositories\Contacts\ContactRepositoryInterface;
+use App\Contracts\Contact\ContactRepositoryInterface;
 use App\Repositories\Subscribers\SubscriberRepository;
-use App\Repositories\Subscribers\SubscriberRepositoryInterface;
+use App\Contracts\Subscriber\SubscriberRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

@@ -9,6 +9,7 @@ use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Facades\Mail;
+use App\Contracts\Subscriber\SubscriberRepositoryInterface;
 
 class SubscriberRepository extends BaseRepository implements SubscriberRepositoryInterface
 {
